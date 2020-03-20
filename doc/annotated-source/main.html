@@ -378,6 +378,25 @@ $.each(<span class="hljs-string">'addError updateError'</span>.split(<span class
             <div class="content"><div class='highlight'><pre>    <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'[data-parsley-validate]'</span>).length)
       $(<span class="hljs-string">'[data-parsley-validate]'</span>).parsley();
   });
+
+  $(<span class="hljs-built_in">document</span>).on(<span class="hljs-string">"turbolinks:load"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <p>Works only on <code>data-parsley-validate</code>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'[data-parsley-validate]'</span>).length)
+      $(<span class="hljs-string">'[data-parsley-validate]'</span>).parsley();
+  });
 }
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Parsley;</pre></div></div>

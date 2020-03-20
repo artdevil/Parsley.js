@@ -1,6 +1,6 @@
 /*!
 * Parsley.js
-* Version 2.9.2 - built Tue, Dec 10th 2019, 6:18 pm
+* Version 2.9.2 - built Fri, Mar 20th 2020, 9:58 am
 * http://parsleyjs.org
 * Guillaume Potier - <guillaume@wisembly.com>
 * Marc-Andre Lafortune - <petroselinum@marc-andre.ca>
@@ -18,6 +18,8 @@
 }(this, (function ($) { 'use strict';
 
   function _typeof(obj) {
+    "@babel/helpers - typeof";
+
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
       _typeof = function (obj) {
         return typeof obj;
@@ -2201,6 +2203,10 @@
 
   if (false !== window.ParsleyConfig.autoBind) {
     $(function () {
+      // Works only on `data-parsley-validate`.
+      if ($('[data-parsley-validate]').length) $('[data-parsley-validate]').parsley();
+    });
+    $(document).on("turbolinks:load", function () {
       // Works only on `data-parsley-validate`.
       if ($('[data-parsley-validate]').length) $('[data-parsley-validate]').parsley();
     });

@@ -118,6 +118,12 @@ if (false !== window.ParsleyConfig.autoBind) {
     if ($('[data-parsley-validate]').length)
       $('[data-parsley-validate]').parsley();
   });
+
+  $(document).on("turbolinks:load", function() {
+    // Works only on `data-parsley-validate`.
+    if ($('[data-parsley-validate]').length)
+      $('[data-parsley-validate]').parsley();
+  });
 }
 
 export default Parsley;
