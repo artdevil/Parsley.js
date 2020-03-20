@@ -1,6 +1,6 @@
 /*!
 * Parsley.js
-* Version 2.9.2 - built Fri, Mar 20th 2020, 9:58 am
+* Version 2.9.3 - built Fri, Mar 20th 2020, 10:03 am
 * http://parsleyjs.org
 * Guillaume Potier - <guillaume@wisembly.com>
 * Marc-Andre Lafortune - <petroselinum@marc-andre.ca>
@@ -1988,7 +1988,7 @@
   Factory.prototype = {
     init: function init(options) {
       this.__class__ = 'Parsley';
-      this.__version__ = '2.9.2';
+      this.__version__ = '2.9.3';
       this.__id__ = Utils.generateID(); // Pre-compute options
 
       this._resetOptions(options); // A Form instance is obviously a `<form>` element but also every node that is not an input and has the `data-parsley-validate` attribute
@@ -2106,7 +2106,7 @@
     actualizeOptions: null,
     _resetOptions: null,
     Factory: Factory,
-    version: '2.9.2'
+    version: '2.9.3'
   }); // Supplement Field and Form with Base
   // This way, the constructors will have access to those methods
 
